@@ -2,8 +2,8 @@ import glfw
 from OpenGL.GL import *
 from OpenGL.GL.shaders import compileProgram, compileShader
 import pyrr
-from TextureLoader import load_texture
-from ObjLoader import ObjLoader
+from dataLoaders.TextureLoader import load_texture
+from dataLoaders.ObjLoader import ObjLoader
 
 
 vertex_src = """
@@ -102,7 +102,7 @@ glEnableVertexAttribArray(2)
 
 
 textures = glGenTextures(1)
-# load_texture("texture/collection06.jpg", textures)
+# load_texture("texture/collection07.jpg", textures)
 load_texture("texture/collection09.jpg", textures)
 
 glUseProgram(shader)
