@@ -6,6 +6,24 @@ class ObjLoader:
 
     @staticmethod
     def search_data(data_values, coordinates, skip, data_type):
+        # index = 0
+        # while(True):
+
+            # if data_values[index] == skip:
+            #     continue
+            # if data_type == 'float':
+            #     coordinates.append(float(data_values[index]))
+            # elif data_type == 'int':
+            #     coordinates.append(int(data_values[index])-1)
+            
+            # index = index + 1 
+
+            # if(index == len(data_values)):
+            #     False
+            #     break
+
+
+
         for d in data_values:
             if d == skip:
                 continue
